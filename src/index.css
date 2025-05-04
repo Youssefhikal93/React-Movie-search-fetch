@@ -488,3 +488,25 @@ body {
     display: none;
   }
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box:nth-child(1) {
+  order: 1;
+} /* Search results */
+.box:nth-child(2) {
+  order: 2;
+} /* Watch summary */
+
+@media (max-width: 767px) {
+  .box:nth-child(1) {
+    order: 2;
+  }
+  .box:nth-child(2) {
+    order: 1;
+  }
+}
