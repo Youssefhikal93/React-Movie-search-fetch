@@ -73,6 +73,7 @@ body {
   border-radius: 0.9rem;
   overflow: auto;
   position: relative;
+  /* margin-top: 150px; */
 }
 
 @media (min-width: 768px) {
@@ -245,7 +246,7 @@ body {
 /* ******* BUTTONS ******* */
 .btn-toggle {
   position: absolute;
-  top: 0.8rem;
+  top: 0.9rem;
   right: 0.8rem;
   height: 2.4rem;
   aspect-ratio: 1;
@@ -257,6 +258,17 @@ body {
   font-weight: bold;
   cursor: pointer;
   z-index: 999;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  background-color: var(--color-primary-light);
+  transform: scale(1.05);
+}
+
+/* Active state for when button is pressed */
+.btn-toggle:active {
+  transform: scale(0.95);
 }
 
 .btn-delete {
@@ -448,5 +460,31 @@ body {
   .rating {
     padding: 2rem 2.4rem;
     gap: 2.4rem;
+  }
+}
+
+/* Default mobile-first styles */
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.2rem;
+}
+
+/* On tablets and up, use grid layout */
+@media (min-width: 768px) {
+  .nav-bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    height: 7.2rem;
+    padding: 0 3.2rem;
+    flex-direction: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-toggle {
+    display: none;
   }
 }

@@ -237,6 +237,9 @@ function Main({ children }) {
 function MovieList({ movies, onSelect }) {
   return (
     <ul className="list list-movies">
+      <div className="summary">
+        <h2>Search Results🔎🔎</h2>
+      </div>
       {movies?.map((movie) => (
         <Movie movie={movie} onSelect={onSelect} key={movie.imdbID} />
       ))}
