@@ -44,6 +44,7 @@ export default function useMovies(query, handelCloseMovie) {
         controller.abort();
       };
     },
+    // eslint-disable-next-line
     [query]
   );
   return { movies, error, isLoading };
