@@ -13,7 +13,7 @@ export default function useMovies(query, handelCloseMovie) {
           setIsLoading(true);
           setError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=b6cf7d02&s=${query}`,
+            `https://www.omdbapi.com/?apikey=b6cf7d02&s=${query}`,
             { signal: controller.signal }
           );
           if (!res.ok) {
