@@ -1,4 +1,4 @@
-import { Children, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import StarRating from "./starRating";
 import useMovies from "./useMovies";
 import useLocalStorage from "./useLocalStorage";
