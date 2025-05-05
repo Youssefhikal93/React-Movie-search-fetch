@@ -1,6 +1,6 @@
 # 🍿 usePopcorn - Movie Watchlist App
 
-![App live link](https://i-watched-it.netlify.app/)
+###[App live link] : (https://i-watched-it.netlify.app/)
 
 A React application that lets you search for movies, view details, and manage your personal watchlist.
 
